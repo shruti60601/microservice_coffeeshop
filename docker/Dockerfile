@@ -12,3 +12,4 @@ ADD app.jar app.jar
 LABEL lijingyao0909.container.name="$SERVER_NAME"
 EXPOSE $TOMCAT_PORT
 ENTRYPOINT java -Dcontainer.host.ip=$CONTAINER_HOST_IP $JAVA_OPTS -Dserver.name=$SERVER_NAME -Xms$JVM_XMS -Xmx$JVM_XMX -jar /opt/app/app.jar --server.port=$TOMCAT_PORT
+sdf
